@@ -1,0 +1,301 @@
+  *{
+    box-sizing: border-box;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+      padding: 0px;
+  }
+
+  body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0px;
+    pad: 0px;
+  }
+
+  header{
+    display: flex;
+    height: 75px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: #eee;
+  }
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  header .logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+  }
+
+  header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  header .logo > img {
+    height: 30px;
+    width: 300px;
+  }
+
+  header .menu ul {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+  }
+
+  header .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .main-container {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container section h2 {
+    text-align: center;
+  }
+
+  .main-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .main-container form > .email-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container form  .email-input >   input  {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  form > .button {
+  padding: 5px 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: #f1c40f;
+  border: 0;
+  cursor: pointer;
+ }
+ form .button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+ }
+
+ .icon > img {
+  width: 60px;
+  height: 60px;
+ }
+ .services {
+  padding-top: 30px;
+  width: 60%;
+  margin: 0 auto;
+
+ }
+ .service {
+  display: flex;
+ }
+
+ .description > p {
+  margin-top: -15px;
+ }
+ .description{
+  width: 100%;
+ }
+ .icon {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ section.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+ }
+
+ section.cards {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 0 auto;
+  width: 80%;
+ }
+
+ article.card{
+  border: 1px  solid black;
+  width: auto;
+  text-align: center;
+  margin: 10px;
+  width: calc(100%/3);
+
+ }
+
+ article.card .instrument {
+  background-color: #ddd;
+  color: black;
+  padding: 1px 0;
+  width: 100%;
+  font-size: 15px;
+ }
+
+ article.card .price{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+ }
+
+
+ article.card ul {
+  display: flex;
+  flex-direction: column;
+ }
+
+article.card ul > li {
+  padding: 5px;
+}
+
+ .button-card {
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: #f1c40f;
+  border: 0;
+  cursor: pointer;
+ }
+
+.button-card:hover {
+  background-color: orange;
+  transition: background-color 1s;
+ }
+
+ .footer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: -15px;
+  background-color: rgb(0,0,0, .07);
+  padding: 12px 20px;
+  line-height: 7px;
+ }
+
+ .footer > ul {
+  display: flex;
+  justify-content: flex-end;
+ }
+
+ .footer > ul > li > a {
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+ }
+
+ .footer > p {
+  font-size: 15px;
+  color: rgb(0,0,0, .7);
+  display: flex;
+  justify-content: flex-end;
+ }
+
+
+ @media (max-width: 576px) {
+
+/* media querys of header */
+    header {
+      display: flex;
+      flex-direction: column;
+      height: 120px;
+    }
+
+    header .logo{
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+    }
+
+    header .menu ul{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    header .menu ul > li {
+      justify-content: space-around;
+      padding: 2px;
+    }
+
+    /* media querys of email form */
+
+    .main-container {
+      padding-top: 150px;
+    }
+
+    /* media querys of section services */
+
+    .services {
+      width: 80%;
+    }
+
+    .service .icon {
+      display: none;
+    }
+
+       /* media querys of section services */
+
+   section.video > iframe{
+    width: 80vw;
+   }
+
+      /* media querys of section cards */
+
+    section.cards{
+      display: flex;
+      flex-direction: column;
+    }
+
+    section.cards .card {
+      padding: 0px;
+      margin: 15px 0px;
+      width: 100%;
+    }
+
+    
+      /* media querys of footer */
+
+
+       footer.footer{
+        width: 100vw;
+      }
+
+  }
+
+  
